@@ -1,21 +1,29 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react'
+import ReactDice from 'react-dice-complete'
+import 'react-dice-complete/dist/react-dice-complete.css'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Wuerfel App</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+class App extends React.Component {
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+  render() {
+    return (
+      <div>
+        <ReactDice
+          numDice={2}
+          rollDone={this.rollDoneCallback}
+          ref={dice => this.reactDice = dice}
+        />
+      </div>
+    );
+  }
+
+  rollAll() {
+    this.reactDice.rollAll()
+  }
+
+  rollDoneCallback(num) {
+    console.log(`You rolled a ${num}`)
+  }
+);
+
+  //export default App;
+
