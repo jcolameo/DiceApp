@@ -1,29 +1,12 @@
-import React from 'react'
-import ReactDice from 'react-dice-complete'
-import 'react-dice-complete/dist/react-dice-complete.css'
+import React from 'react';
+import RollDice from './RollDice'
 
-class App extends React.Component {
+function App() {
+  return (
+    <div>
+      <RollDice />
+    </div>
+  );
+}
 
-  render() {
-    return (
-      <div>
-        <ReactDice
-          numDice={2}
-          rollDone={this.rollDoneCallback}
-          ref={dice => this.reactDice = dice}
-        />
-      </div>
-    );
-  }
-
-  rollAll() {
-    this.reactDice.rollAll()
-  }
-
-  rollDoneCallback(num) {
-    console.log(`You rolled a ${num}`)
-  }
-);
-
-  //export default App;
-
+export default App;
