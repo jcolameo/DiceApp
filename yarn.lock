@@ -2995,7 +2995,7 @@ expo-keep-awake@~9.1.2:
   resolved "https://registry.yarnpkg.com/expo-keep-awake/-/expo-keep-awake-9.1.2.tgz#b3e52c7bef0ade975ae88637a2bf980f6b573368"
   integrity sha512-CCuEOQUNLYtMA0rt0sQ9u5LlIMH7lDJG7dImoorfKMsP95yHXy8dl3oCdtaz2zbsPgggVYeom9gE+gQu+Ki4rQ==
 
-expo-sensors@~10.1.2:
+expo-sensors@^10.1.2:
   version "10.1.2"
   resolved "https://registry.yarnpkg.com/expo-sensors/-/expo-sensors-10.1.2.tgz#e27d0683c72fdcf1f7361f3372658b06d77d3c6e"
   integrity sha512-XTC5ay4XMmv6ughWzdDBMsKwsdBimxUubWUbqLDC1Xye3RzphZ7fky9sfaKsqBONRhUhtAcuHvcoAx6GV5en4A==
@@ -5053,6 +5053,11 @@ react-native-safe-area-context@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.2.0.tgz#06113c6b208f982d68ab5c3cebd199ca93db6941"
   integrity sha512-k2Nty4PwSnrg9HwrYeeE+EYqViYJoOFwEy9LxL5RIRfoqxAq/uQXNGwpUg2/u4gnKpBbEPa9eRh15KKMe/VHkA==
+
+react-native-shake@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/react-native-shake/-/react-native-shake-4.0.2.tgz#6ea91049a87709c0917d79d3478f60089dfeb86f"
+  integrity sha512-2niPeI2d5blkbtOwHZ9aoPEue5Uas2IViZKc3jMJ7NIycSQKBw/gRhEYl4mNagCOF6zD6b30lQRBEqhCZvkAoA==
 
 react-native-web@~0.13.12:
   version "0.13.18"
